@@ -1,0 +1,156 @@
+html, body {
+    
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+}
+
+
+#background {
+    background-color: #000;
+    background-image: url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    #mainLoginAndRegisterCon * {
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        line-height: 1em;
+        box-sizing: border-box;
+    }
+    
+    #mainLoginAndRegisterCon {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        max-width: 1024px;
+
+        #inputContainer {
+            width: 400px;
+            padding: 45px;
+            float: left;
+            border-right: 1px solid #999;
+
+            h2 {
+                text-align: center;
+            }
+
+            input[type=text], 
+            input[type=email],
+            input[type=password] {
+                display: block;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #fff;
+                height: 27px;
+                line-height:27px;
+                width:100%;
+                margin-bottom:18px;
+            }
+
+            label {
+                color: #a0a0a0;
+                font-size: 13px;
+                margin-top: 15px;
+            }
+
+            button {
+                background-color: transparent;
+                border: 2px solid #fff;
+                border-radius: 250px;
+                color: #fff;
+                display: block;
+                font-size: 17px;
+                letter-spacing: 1px;
+                margin: 20px auto;
+                height: 41px;
+                width: 100%;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            form {
+                .hasAccountText {
+                    text-align: center;
+                    font-size: 12px;
+                    font-weight: bold;
+                    span {
+                        cursor: pointer;
+                    }
+                }
+            } 
+
+            #hideLogin, #hideRegister {
+                cursor: pointer;
+            }
+        }
+    }
+
+    // right side
+    #mainLoginAndRegisterCon {
+        #loginTextRight {
+            padding: 45px;
+            display: table-cell;
+            line-height: 1;
+
+            h1 {
+                color: #07d159;
+                font-size: 45px;
+                font-weight: bold;
+            }
+
+            h2 {
+                margin: 35px 0;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    font-size: 20px;
+                    list-style-type: none;
+                    padding: 5px 30px;
+                    background: url(../images/icons/checkMark.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

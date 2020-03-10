@@ -1,0 +1,149 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\000031}}
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\000039}}
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000312}}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000316}}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000320}}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000323}}
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000327}}
+::-webkit-input-placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff; }
+:-ms-input-placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff; }
+::-ms-input-placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff; }
+::placeholder {
+  /* Most modern browsers support this now. */
+  color: #fff; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000332}}
+#background {
+  background-color: #000;
+  background-image: url("../images/sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+  height: 100%;
+  width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000342}}
+  #background #mainLoginAndRegisterCon * {
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000350}}
+  #background #mainLoginAndRegisterCon {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000356}}
+    #background #mainLoginAndRegisterCon #inputContainer {
+      width: 400px;
+      padding: 45px;
+      float: left;
+      border-right: 1px solid #999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000362}}
+      #background #mainLoginAndRegisterCon #inputContainer h2 {
+        text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000366}}
+      #background #mainLoginAndRegisterCon #inputContainer input[type=text],
+      #background #mainLoginAndRegisterCon #inputContainer input[type=email],
+      #background #mainLoginAndRegisterCon #inputContainer input[type=password] {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #fff;
+        height: 27px;
+        line-height: 27px;
+        width: 100%;
+        margin-bottom: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000379}}
+      #background #mainLoginAndRegisterCon #inputContainer label {
+        color: #a0a0a0;
+        font-size: 13px;
+        margin-top: 15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000385}}
+      #background #mainLoginAndRegisterCon #inputContainer button {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 250px;
+        color: #fff;
+        display: block;
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin: 20px auto;
+        height: 41px;
+        width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000397}}
+        #background #mainLoginAndRegisterCon #inputContainer button:hover {
+          cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003103}}
+      #background #mainLoginAndRegisterCon #inputContainer form .hasAccountText {
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003107}}
+        #background #mainLoginAndRegisterCon #inputContainer form .hasAccountText span {
+          cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003113}}
+      #background #mainLoginAndRegisterCon #inputContainer #hideLogin, #background #mainLoginAndRegisterCon #inputContainer #hideRegister {
+        cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003121}}
+  #background #mainLoginAndRegisterCon #loginTextRight {
+    padding: 45px;
+    display: table-cell;
+    line-height: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003126}}
+    #background #mainLoginAndRegisterCon #loginTextRight h1 {
+      color: #07d159;
+      font-size: 45px;
+      font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003132}}
+    #background #mainLoginAndRegisterCon #loginTextRight h2 {
+      margin: 35px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003136}}
+    #background #mainLoginAndRegisterCon #loginTextRight ul {
+      padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003139}}
+      #background #mainLoginAndRegisterCon #loginTextRight ul li {
+        font-size: 20px;
+        list-style-type: none;
+        padding: 5px 30px;
+        background: url(../images/icons/checkMark.png);
+        background-repeat: no-repeat;
+        background-position: left center; }
+
+/*# sourceMappingURL=register.css.map */
