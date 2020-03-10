@@ -110,34 +110,39 @@ html, body {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\0000397}}
         #background #mainLoginAndRegisterCon #inputContainer button:hover {
           cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003104}}
+      #background #mainLoginAndRegisterCon #inputContainer form .errorMessage {
+        color: #07d159;
+        font-size: 12px;
+        display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003110}}
       #background #mainLoginAndRegisterCon #inputContainer form .hasAccountText {
         text-align: center;
         font-size: 12px;
         font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003114}}
         #background #mainLoginAndRegisterCon #inputContainer form .hasAccountText span {
           cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003113}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003120}}
       #background #mainLoginAndRegisterCon #inputContainer #hideLogin, #background #mainLoginAndRegisterCon #inputContainer #hideRegister {
         cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003128}}
   #background #mainLoginAndRegisterCon #loginTextRight {
     padding: 45px;
     display: table-cell;
     line-height: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003133}}
     #background #mainLoginAndRegisterCon #loginTextRight h1 {
       color: #07d159;
       font-size: 45px;
       font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003139}}
     #background #mainLoginAndRegisterCon #loginTextRight h2 {
       margin: 35px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003143}}
     #background #mainLoginAndRegisterCon #loginTextRight ul {
       padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003139}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/register\.scss}line{font-family:\00003146}}
       #background #mainLoginAndRegisterCon #loginTextRight ul li {
         font-size: 20px;
         list-style-type: none;
