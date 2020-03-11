@@ -5,6 +5,12 @@
 
     $account = new Account($con);
 
+    $loginUsername = "";
+    $userName = "";
+    $firstName = "";
+    $lastName = "";
+    $email = "";
+
     @include 'includes/handlers/register.inc.php';
     @include 'includes/handlers/login.inc.php';
 
@@ -62,7 +68,7 @@
                     <div class="form-group">
                         <?php echo $account->getError(Constants::$loginFail);?>
                         <label for="loginUsername">Username</label>
-                        <input type="text" class="form-control" id="loginUsername" name="loginUsername" placeholder="e.g. BartSimpson" required>
+                        <input type="text" class="form-control" id="loginUsername" name="loginUsername" placeholder="e.g. BartSimpson" value="<?php echo $loginUsername ?>" required>
                     </div>
                     <div class="form-group">
                         <label for="loginPassword">Password</label>
@@ -82,24 +88,24 @@
                         <?php echo $account->getError(Constants::$userNameShortLong) ?>
                         <?php echo $account->getError(Constants::$userNameTaken) ?>
                         <label for="userName">Username</label>
-                        <input type="text" class="form-control" id="userName" name="userName" placeholder="e.g. BartSimpson" required>
+                        <input type="text" class="form-control" id="userName" name="userName" placeholder="e.g. BartSimpson" required value="<?php echo $userName ?>">
                     </div>
                     <div class="form-group">
                         <?php echo $account->getError(Constants::$firstNameShortLong)?>
                         <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="e.g. Bart" required>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="e.g. Bart" value="<?php echo $firstName ?>" required>
                     </div>
                     <div class="form-group">
                         <?php echo $account->getError(Constants::$lastNameShortLong)?>
                         <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="e.g. Simpson" required>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="e.g. Simpson" value="<?php echo $lastName ?>" required>
                     </div>
                     <div class="form-group">
                         <?php echo $account->getError(Constants::$emailNotMatch)?>
                         <?php echo $account->getError(Constants::$emailInvalid)?>
                         <?php echo $account->getError(Constants::$emailTaken)?>
                         <label for="email">E-mail</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Bart.Simpson@gmail.com" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Bart.Simpson@gmail.com" value="<?php echo $email ?>" required>
                     </div>
                     <div class="form-group">
                         <label for="email2">Email repeat</label>
