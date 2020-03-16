@@ -1,5 +1,7 @@
 <?php 
     @include 'includes/config.php'; 
+    @include 'includes/classes/Artist.php'; 
+    @include 'includes/classes/Album.php'; 
 
     if(isset($_SESSION['loggedUser'])) {
         $loggedUser = $_SESSION['loggedUser'];
@@ -23,7 +25,7 @@
 <div id="mainContainer">
     <div id="topContainer">
         <!-- Left Container for navigation -->
-        <?php @include 'includes/View/navBarContainer.php' ?>
+        <?php @include 'includes/layout/navBarContainer.php' ?>
 
         <div id="mainViewContainer">
             <div id="mainContent">

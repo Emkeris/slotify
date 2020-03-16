@@ -1,4 +1,5 @@
-<?php @include 'includes/View/header.php'?>
+<?php @include 'includes/layout/header.php'?>
+
 
     <h1 class="pageHeadingBig">You might also like </h1>
 
@@ -14,11 +15,10 @@
                         </div>
                     </a>
                 </div>
-
         <?php endwhile; ?>
 
         
     </div>
 
-<?php @include 'includes/View/footer.php'?>
+<?php @include 'includes/layout/footer.php'?>
 

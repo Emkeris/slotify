@@ -4,7 +4,7 @@
 
 
     <!-- bottom Container -->
-    <?php @include 'includes/View/nowPlayingBar.php'?>
+    <?php @include 'includes/layout/nowPlayingBar.php'?>
 
 </div> 
     
