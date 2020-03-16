@@ -119,6 +119,39 @@ body {
                     }
                 }
             }
+
+            // Album Info in Album.php 
+            .entityInfo {
+                padding: 40px 0 10px 0;
+                display: inline-block;
+                width: 100%;
+
+                .leftSection {
+                    width: 30%;
+                    float: left;
+                    max-width: 250px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .rightSection {
+                    width: 70%;
+                    float: left;
+                    padding: 5px 10px 5px 40px;
+                    box-sizing: border-box;
+
+                    h2 {
+                        margin-top: 0px;
+                    }
+
+                    p {
+                        color: #939393;
+                        font-weight: 200;
+                    }
+                }
+            }
         }
     }
 }
