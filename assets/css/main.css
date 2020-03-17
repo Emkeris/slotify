@@ -130,15 +130,75 @@ body {
           #topContainer #mainViewContainer #mainContent .entityInfo .rightSection p {
             color: #939393;
             font-weight: 200; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003158}}
+      #topContainer #mainViewContainer #mainContent .trackListContainer .trackList {
+        padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003161}}
+        #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow {
+          height: 40px;
+          padding: 15px 10px;
+          list-style: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003166}}
+          #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow:hover {
+            background-color: #282828; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003170}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow:hover .trackCount span {
+              visibility: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003174}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow:hover .trackCount img {
+              visibility: visible; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003180}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow:hover .trackOptions img {
+              visibility: visible; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003187}}
+          #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackCount {
+            width: 8%;
+            float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003191}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackCount img {
+              width: 20px;
+              visibility: hidden;
+              position: absolute;
+              cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003198}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackCount span {
+              visibility: visible; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003203}}
+          #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackInfo {
+            width: 75%;
+            float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003207}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackInfo span {
+              color: #939393;
+              font-weight: 200;
+              display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003213}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackInfo .trackName {
+              color: #fff;
+              margin-bottom: 7px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003219}}
+          #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackOptions {
+            width: 5%;
+            float: left;
+            text-align: right; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003224}}
+            #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackOptions img {
+              width: 15px;
+              visibility: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003230}}
+          #topContainer #mainViewContainer #mainContent .trackListContainer .trackList .trackListRow .trackDuration {
+            width: 12%;
+            float: left;
+            text-align: right; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003243}}
 #nowPlayingBarContainer {
   width: 100%;
   background-color: #282729;
   bottom: 0;
   position: fixed;
   min-width: 620px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003251}}
   #nowPlayingBarContainer #nowPlayingBar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,27 +207,27 @@ body {
     padding: 16px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003174}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003257}}
     #nowPlayingBarContainer #nowPlayingBar .content {
       width: 100%;
       height: 57px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003262}}
     #nowPlayingBarContainer #nowPlayingBar #nowPlayingLeft, #nowPlayingBarContainer #nowPlayingBar #nowPlayingRight {
       width: 30%;
       min-width: 180px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003267}}
     #nowPlayingBarContainer #nowPlayingBar .controlButton {
       background-color: transparent;
       border: none;
       vertical-align: middle; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003272}}
       #nowPlayingBarContainer #nowPlayingBar .controlButton:hover {
         cursor: pointer; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003276}}
       #nowPlayingBarContainer #nowPlayingBar .controlButton img {
         width: 20px;
         height: 20px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003282}}
     #nowPlayingBarContainer #nowPlayingBar .progressBar {
       width: 100%;
       height: 12px;
@@ -176,38 +236,38 @@ body {
       display: inline-flex;
       cursor: pointer;
       margin-top: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003289}}
       #nowPlayingBarContainer #nowPlayingBar .progressBar .progressBarBg {
         background-color: #404040;
         height: 4px;
         width: 100%;
         border-radius: 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003295}}
         #nowPlayingBarContainer #nowPlayingBar .progressBar .progressBarBg .progress {
           background-color: #a0a0a0;
           height: 4px;
           width: 0;
           border-radius: 2px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003308}}
     #nowPlayingBarContainer #nowPlayingBar #nowPlayingLeft .content .albumLink img {
       height: 100%;
       max-width: 57px;
       margin-right: 15px;
       float: left;
       background-size: cover; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003318}}
     #nowPlayingBarContainer #nowPlayingBar #nowPlayingLeft .content .trackInfo {
       display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003321}}
       #nowPlayingBarContainer #nowPlayingBar #nowPlayingLeft .content .trackInfo .trackName {
         margin: 6px 0;
         display: inline-block;
         width: 100%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003328}}
       #nowPlayingBarContainer #nowPlayingBar #nowPlayingLeft .content .trackInfo .artistName span {
         font-size: 12px;
         color: #a0a0a0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003338}}
     #nowPlayingBarContainer #nowPlayingBar #nowPlayingCenter {
       width: 40%;
       max-width: 700px;
@@ -221,35 +281,35 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003346}}
       #nowPlayingBarContainer #nowPlayingBar #nowPlayingCenter .playerControls .buttons {
         margin: 0 auto;
         display: table; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003351}}
         #nowPlayingBarContainer #nowPlayingBar #nowPlayingCenter .playerControls .buttons .play img, #nowPlayingBarContainer #nowPlayingBar #nowPlayingCenter .playerControls .buttons .pause img {
           width: 32px;
           height: 32px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003359}}
       #nowPlayingBarContainer #nowPlayingBar #nowPlayingCenter .playBackBar {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003362}}
         #nowPlayingBarContainer #nowPlayingBar #nowPlayingCenter .playBackBar .progressTime {
           color: #a0a0a0;
           font-size: 11px;
           min-width: 40px;
           text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003372}}
     #nowPlayingBarContainer #nowPlayingBar #nowPlayingRight {
       position: relative;
       margin-top: 16px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003375}}
       #nowPlayingBarContainer #nowPlayingBar #nowPlayingRight .volumeBar {
         width: 180px;
         position: absolute;
         right: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/slotify\/assets\/scss\/main\.scss}line{font-family:\00003380}}
         #nowPlayingBarContainer #nowPlayingBar #nowPlayingRight .volumeBar .progressBar {
           width: 125px; }
 

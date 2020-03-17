@@ -152,6 +152,89 @@ body {
                     }
                 }
             }
+
+            .trackListContainer {
+
+                .trackList {
+                    padding: 0;
+
+                    .trackListRow {
+                        height: 40px;
+                        padding: 15px 10px;
+                        list-style: none;
+
+                        &:hover {
+                            background-color:#282828;
+
+                            .trackCount {
+                                span {
+                                    visibility: hidden;
+                                }
+
+                                img {
+                                    visibility:visible;
+                                }
+                            }
+
+                            .trackOptions {
+                                img {
+                                    visibility: visible;
+                                }
+                            }
+                            
+                        }
+
+                        .trackCount {
+                            width: 8%;
+                            float: left;
+
+                            img {
+                                width:20px;
+                                visibility:hidden;
+                                position:absolute;
+                                cursor: pointer;
+                            }
+
+                            span {
+                                visibility:visible;
+                            }
+                        }
+
+                        .trackInfo {
+                            width: 75%;
+                            float: left;
+
+                            span {
+                                color: #939393;
+                                font-weight: 200;
+                                display: block;
+                            }
+
+                            .trackName {
+                                color: #fff;
+                                margin-bottom: 7px;
+                            }
+                        }
+
+                        .trackOptions {
+                            width: 5%;
+                            float: left;
+                            text-align: right;
+
+                            img {
+                                width: 15px;
+                                visibility: hidden;
+                            }
+                        }
+                        
+                        .trackDuration {
+                            width: 12%;
+                            float: left;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
         }
     }
 }

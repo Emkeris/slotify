@@ -25,8 +25,38 @@
 </div>
 
 <div class="trackListContainer">
-    <ul>
-        <li></li>
+    <ul class="trackList">
+        <?php 
+            $i = 1;
+            $songsIdArray = $album->getSongsIds();
+
+            foreach($songsIdArray as $songId) :
+            $albumSong = new Song($con, $songId);
+            $albumArtist = $albumSong->getArtist(); ?> 
+
+
+            <li class="trackListRow">
+                <div class="trackCount">
+                    <img class="play" src="assets/images/icons/play-white.png" alt="Play">
+                    <span class="trackNumber"><?php echo $i ?></span>
+                </div>
+
+                <div class="trackInfo">
+                    <span class="trackName"><?php echo $albumSong->getTitle() ?></span>
+                    <span class="artistName"><?php echo $albumArtist->getName() ?></span>
+                </div>
+
+                <div class="trackOptions">
+                    <img class="optionsBtn" src="assets/images/icons/more.png" alt="More">
+                </div>
+                
+                <div class="trackDuration">
+                    <span class="duration"><?php echo $albumSong->getDuration() ?></span>
+                </div>
+            </li>
+            
+            <?php $i++ ?>
+        <?php endforeach; ?>
     </ul>
 </div>
 
