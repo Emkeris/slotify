@@ -347,12 +347,19 @@ body {
                     margin: 0 auto;
                     display:table;
 
+                    .pause{
+                        img {
+                            display: none;
+                        }
+                    }
                     .play, .pause {
+                        padding : 0;
                         img {
                             width: 32px;
                             height: 32px;
                         }
                     }
+
                 }
             }
 
