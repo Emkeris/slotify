@@ -1,36 +1,37 @@
-<?php @include 'includes/includedFiles.php';
+<?php 
+    @include 'includes/includedFiles.php';
 
     if(isset($_GET['id'])) {
-        $albumId = $_GET['id'];
+        $artistId = $_GET['id'];
     } else {
         header("Location: index.php");
     }
 
-// Album
-    // $albumQuery = mysqli_query($con, "SELECT * FROM albums WHERE id='$albumId'") or die(mysqli_error($con));
-    // $album = mysqli_fetch_array($albumQuery);
-    $album = new Album($con, $albumId);
-    $artist = $album->getArtist();
+    $artist = new Artist($con, $artistId);
 ?>
 
-<div class="entityInfo">
-    <div class="leftSection">
-        <img src="<?php echo $album->getArtworkPath() ?>" alt="<?php echo $album->getTitle() ?>">
-    </div>
-    <div class="rightSection">
-        <h2><?php echo $album->getTitle() ?></h2>
-        <p>By <?php echo $artist->getName() ?></p>
-        <p><?php echo $album->getNumberOfSongs() ?> songs</p>
+<div class="entityInfo borderBottom">
+    <div class="centerSection">
+        <div class="artistInfo">
+            <h1 class="artistName"><?php echo $artist->getName(); ?></h1>
+            <div class="headerButtons">
+                <button class="button green" onclick="playFirstSong()">Play</button>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="trackListContainer">
+<div class="trackListContainer borderBottom">
+    <h2 class="h2text">SONGS</h2>
     <ul class="trackList">
         <?php 
             $i = 1;
-            $songsIdArray = $album->getSongsIds();
+            $songsIdArray = $artist->getSongIds();
 
             foreach($songsIdArray as $songId) :
+                if($i > 5) {
+                    break;
+                }
             $albumSong = new Song($con, $songId);
             $albumArtist = $albumSong->getArtist(); ?> 
 
@@ -66,3 +67,19 @@
 
     </ul>
 </div>
+
+<div class="gridViewContainer">
+    <h2>ALBUMS</h2>
+        <?php 
+            $albumQuery = mysqli_query($con, "SELECT * FROM albums WHERE artist = '$artistId' ") or die(mysqli_error($con));
+            while($row = mysqli_fetch_assoc($albumQuery)) :?>
+                <div class="gridViewItem">
+                    <span role="link" tabindex="0" onclick="openPage('album.php?id=<?php echo $row['id'] ?>')">
+                        <img src="<?php echo $row['artworkPath']?>" alt="<?php echo $row['title']  ?>">
+                        <div class="gridViewInfo">
+                            <?php echo $row['title'] ?>
+                        </div>
+                    </span>
+                </div>
+        <?php endwhile; ?>
+    </div>

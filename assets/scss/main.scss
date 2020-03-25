@@ -16,6 +16,18 @@ body {
     letter-spacing: 1px;
 }
 
+.button {
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background-color: transparent;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 2px solid #fff;
+    border-radius:500px;
+    padding: 15px;
+    min-width: 130px;
+}
 // top container
 #topContainer {
     min-height: 100%;
@@ -151,6 +163,25 @@ body {
                         font-weight: 200;
                     }
                 }
+
+                .centerSection {
+                
+                    .artistInfo {
+                        text-align: center;
+
+                        .button.green {
+                            background-color: #2ebd59;
+                            border-color: #2ebd59;
+                        }
+                    }
+                }
+            }
+
+            .trackListContainer, 
+            .gridViewContainer { 
+                h2 { 
+                    text-align: center;
+                }
             }
 
             .trackListContainer {
@@ -234,6 +265,11 @@ body {
                         }
                     }
                 }
+            }
+
+            .borderBottom {
+                border-bottom : 1px solid #939393;
+                margin-bottom: 20px;
             }
         }
     }

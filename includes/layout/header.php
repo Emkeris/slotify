@@ -7,10 +7,10 @@
 
     if(isset($_SESSION['loggedUser'])) {
         $loggedUser = $_SESSION['loggedUser'];
+        echo "<script>var userLoggedIn = '$loggedUser'</script>";
     } else {
         header("Location: register.php");
     }
-
 ?>
 
 
