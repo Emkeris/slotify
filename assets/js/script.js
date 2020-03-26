@@ -26,6 +26,42 @@ function openPage(url) {
     history.pushState(null, null, url);
 }
 
+function createPlaylist() { 
+    var popUp = prompt("Please enter the name of your Playlist");
+
+    if(popUp != null) {
+        $.post("includes/handlers/ajax/createPlaylist.php", {name: popUp, username: userLoggedIn })
+            .done(function(erro) {
+
+                if(erro != "") {
+                    alert(erro);
+                    return;
+                }
+                // do something when ajax returned
+                openPage("yourMusic.php");
+            }
+        );
+    }
+}
+
+function deletePlaylist(playlistId) {
+    var prompt = confirm("Are you sure you want to delete this playlist?");
+    
+    if(prompt) {
+        $.post("includes/handlers/ajax/deletePlaylist.php", { playlistId })
+            .done(function(erro) {
+
+                if(erro != "") {
+                    alert(erro);
+                    return;
+                }
+                // do something when ajax returned
+                openPage("yourMusic.php");
+            }
+        );
+    }
+}
+
 
 function formatTime(seconds) {
     var time = Math.round(seconds);

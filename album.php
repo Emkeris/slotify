@@ -66,3 +66,11 @@
 
     </ul>
 </div>
+
+<nav class="optionsMenu">
+    <input type="hidden" class="songId">
+    <div class="item">Add to Playlist</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+</nav>
+
