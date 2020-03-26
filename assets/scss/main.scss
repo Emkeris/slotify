@@ -16,6 +16,10 @@ body {
     letter-spacing: 1px;
 }
 
+[role=link] {
+    cursor: pointer;
+}
+
 .button {
     color: #fff;
     cursor: pointer;
@@ -177,6 +181,30 @@ body {
                 }
             }
 
+            .searchContainer {
+                background-color: #242424;
+                padding: 20px 28px;
+
+                h4 {
+                    margin: 0;
+                    font-weight: 300;
+                }
+
+                input {
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    color: #fff;
+                    font-weight: 700;
+                    font-size: 62px;
+                    letter-spacing:2px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
             .trackListContainer, 
             .gridViewContainer { 
                 h2 { 
@@ -267,9 +295,35 @@ body {
                 }
             }
 
+            .artistContainer {
+
+                h2 {
+                    text-align: center;
+                }
+
+                .searchResultRow {
+                    padding: 15px 10px;
+
+                    &:hover {
+                        background-color: #282828;
+                    }
+
+                    .artistName {
+                        span {
+                            color: #fff
+                        }
+                    }
+                }
+            }
+
             .borderBottom {
                 border-bottom : 1px solid #939393;
                 margin-bottom: 20px;
+            }
+
+            .noResults {
+                margin: 15px;
+                display: block;
             }
         }
     }
