@@ -9,6 +9,42 @@ var shuffle = false;
 var userLoggedIn;
 var timer;
 
+$(document).click(function(click) {
+    var target = $(click.target);
+
+    if(!target.hasClass("item") && !target.hasClass("optionsBtn")) {
+        hideOptionsMenu();
+    }
+});
+
+$(window).scroll(function() {
+    hideOptionsMenu();
+});
+
+$(document).on("change", "select.playlist", function() {
+    var select = $(this);
+    var playlistId = select.val();
+    var songId = select.prev(".songId").val();
+
+    $.post("includes/handlers/ajax/addtoplaylist.php", {playlistId: playlistId, songId: songId})
+    .done(function(erro) {
+
+        if(erro != "") {
+            alert(erro);
+            return;
+        }
+
+        hideOptionsMenu();
+        select.val("");
+    });
+});
+
+function logOut() {
+    $.post("includes/handlers/ajax/logOut.php", function() {
+        location.reload();
+    })
+}
+
 function openPage(url) {
 
     if(timer != null) {
@@ -24,6 +60,24 @@ function openPage(url) {
     $("#mainContent").load(encodedUrl);
     $("body").scrollTop(0);
     history.pushState(null, null, url);
+}
+
+function removeFromPlaylist(button, playlistId) {
+    var songId = $(button).prevAll(".songId").val();
+
+    if(prompt) {
+        $.post("includes/handlers/ajax/removeFromPlaylist.php", { playlistId: playlistId, songId: songId})
+            .done(function(erro) {
+
+                if(erro != "") {
+                    alert(erro);
+                    return;
+                }
+                // do something when ajax returned
+                openPage("playlist.php?id=" + playlistId);
+            }
+        );
+    }
 }
 
 function createPlaylist() { 
@@ -60,6 +114,30 @@ function deletePlaylist(playlistId) {
             }
         );
     }
+}
+
+function hideOptionsMenu() {
+    var menu = $(".optionsMenu");
+    if(menu.css("display") != "none") {
+        menu.css("display", "none");
+    }
+}
+
+function showOptionsMenu(button) {
+    var songId = $(button).prevAll(".songId").val();
+ 
+    var menu = $(".optionsMenu");
+    var menuWidth = menu.width();
+    menu.find(".songId").val(songId);
+    
+    var scrolTop = $(window).scrollTop(); // distance from top of window to to content area
+    var elementOffset = $(button).offset().top; // distance from top of document
+
+    var top = elementOffset - scrolTop;
+    var left = $(button).position().left;
+
+    menu.css({"top" : top + "px", "left" : left - menuWidth + "px", "display" : "inline"});
+
 }
 
 

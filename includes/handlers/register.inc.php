@@ -31,7 +31,7 @@
         $regSuccess = $account->register($userName, $firstName, $lastName, $email, $email2, $password, $password2);
 
         if($regSuccess) {
-            $_SESSION['loggedUser'] = $userName;
+            $_SESSION['userLoggedIn'] = $userName;
             header("Location: index.php");
         }
     }

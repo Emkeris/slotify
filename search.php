@@ -74,7 +74,8 @@ $(function () {
                     </div>
 
                     <div class="trackOptions">
-                        <img class="optionsBtn" src="assets/images/icons/more.png" alt="More">
+                        <input type="hidden" class="songId" value="<?php echo $albumSong->getId() ?>">
+                        <img class="optionsBtn" src="assets/images/icons/more.png" alt="More" onclick="showOptionsMenu(this)">
                     </div>
                     
                     <div class="trackDuration">
@@ -137,3 +138,7 @@ $(function () {
     <?php endwhile; ?>
 </div>
 
+<nav class="optionsMenu">
+    <input type="hidden" class="songId">
+    <?php echo Playlist::getPlaylistsDropdown($con, $userLoggedIn->getUsername()); ?>
+</nav>

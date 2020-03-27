@@ -8,7 +8,7 @@
         $loginSuccess = $account->login($loginUsername, $loginPassword);
 
         if($loginSuccess) {
-            $_SESSION['loggedUser'] = $loginUsername;
+            $_SESSION['userLoggedIn'] = $loginUsername;
             header('Location: index.php');
         } 
     }

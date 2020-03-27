@@ -196,6 +196,22 @@ body {
 
                         @include greenButton;
                     }
+
+                    .userInfo {
+
+                        h1 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .buttonItems {
+                @include greenButton;
+
+                button {
+                    display: block;
+                    margin:0 auto 20px auto;
                 }
             }
 
@@ -378,12 +394,18 @@ body {
                 color: rgba(147, 147, 147, 0.8);
                 cursor: pointer;
                 height: 40px;
+                background-color: #282828;
+                font-size: 14px;
 
                 &:hover {
                     color: #fff;
                     background-color: #333;
                     border-color: #333;
                 }
+            }
+
+            select {
+                border: none;
             }
         }
     }
